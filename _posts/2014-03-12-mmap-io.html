@@ -8,7 +8,7 @@ title: mmap与read write的对比
 前几天在看malloc实现资料的时候，看到mmap，发现自己并不是非常理解mmap的作用，于是查了一些资料，顺便把以前的知识梳理一下，于是就有了这篇博文。
 </p>
 <p>
-Linux下对内存的访问主要有两种方式。一种是read/write/seek，而另外一种是利用mmap系统调用将整个文件映射到内存中。[8][9]对比两种方式的性能，测试结果如图1、2所示。
+Linux下对文件的访问主要有两种方式。一种是read/write/seek，而另外一种是利用mmap系统调用将整个文件映射到内存中。[8][9]对比两种方式的性能，测试结果如图1、2所示。
 </p>
 <img src="/images/mmap/apue_perf.jpg"/>
 <center>图1 mmap读写文件测试</center>
